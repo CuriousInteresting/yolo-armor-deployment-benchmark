@@ -1,3 +1,4 @@
+
 # Python bytecode and caches
 __pycache__/
 *.py[cod]
@@ -5,6 +6,7 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.ipynb_checkpoints/
 
 # Virtual environments and local environment settings
 .venv/
@@ -20,21 +22,37 @@ env/
 Thumbs.db
 Desktop.ini
 
-# Local source videos: keep the folder placeholder, not the video data
+# Source videos: do not commit video data
 videos/*
 !videos/.gitkeep
 
-# Generated result videos are local artifacts, not repository assets
-results/*.mp4
-results/*.avi
-results/*.mov
-results/*.mkv
-results/*.webm
+# Video files: exclude source and generated videos globally
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.m4v
+*.mpeg
+*.mpg
+*.wmv
+*.flv
+
+# Generated inference results
+results/*
 !results/.gitkeep
+!results/*.csv
+!results/*.md
 
 # Logs and temporary diagnostics
 *.log
 kernel.errors.txt
+*.tmp
 
 # Ultralytics default training/inference outputs
 runs/
+
+# Python packaging artifacts
+build/
+dist/
+*.egg-info/
