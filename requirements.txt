@@ -1,0 +1,9 @@
+# 其他推理/导出依赖
+# PyTorch 和 torchvision 请根据操作系统、Python 版本及 CPU/GPU 环境安装匹配版本。
+ultralytics==8.4.177
+opencv-python==5.0.0.93
+numpy==2.2.6
+onnx==1.23.2
+onnxslim==0.1.98
+onnxruntime==1.23.2
+openvino==2026.4.1

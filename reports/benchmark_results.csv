@@ -1,0 +1,5 @@
+﻿timestamp,status,model_format,model_path,model_size_mb,source_video,output_video,confidence_threshold,iou_threshold,imgsz,device,frames,warmup_frames_excluded,measured_frames,total_detections,avg_detections_per_frame,avg_detection_confidence,avg_inference_ms,p50_inference_ms,p95_inference_ms,inference_fps,wall_time_seconds,error
+2026-10-23T20:15:13+08:00,OK,pt,weights\best.pt,5.619,videos\original.mp4,results\pt_output.mp4,0.31,0.7,640,cpu,483,10,473,747,1.5466,0.6474,110.9508,102.7358,154.9637,9.013,77.873,
+2026-10-23T20:15:13+08:00,OK,onnx,models\best.onnx,9.724,videos\original.mp4,results\onnx_output.mp4,0.31,0.7,640,cpu,483,10,473,769,1.5921,0.6527,146.8839,137.1991,207.0827,6.8081,94.074,
+2026-10-23T20:15:13+08:00,OK,torchscript,models\best.torchscript,9.946,videos\original.mp4,results\torchscript_output.mp4,0.31,0.7,640,cpu,483,10,473,769,1.5921,0.6527,169.6756,159.2164,224.8806,5.8936,104.457,
+2026-10-23T20:15:13+08:00,OK,openvino,models\best_openvino_model,9.878,videos\original.mp4,results\openvino_output.mp4,0.31,0.7,640,cpu,483,10,473,771,1.5963,0.6507,102.1914,42.1727,368.6794,9.7856,74.893,

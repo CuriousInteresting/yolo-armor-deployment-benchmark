@@ -1,0 +1,40 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local environment settings
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local source videos: keep the folder placeholder, not the video data
+videos/*
+!videos/.gitkeep
+
+# Generated result videos are local artifacts, not repository assets
+results/*.mp4
+results/*.avi
+results/*.mov
+results/*.mkv
+results/*.webm
+!results/.gitkeep
+
+# Logs and temporary diagnostics
+*.log
+kernel.errors.txt
+
+# Ultralytics default training/inference outputs
+runs/
